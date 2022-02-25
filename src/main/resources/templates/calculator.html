@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/calculator.css}">
+    <title>calculator</title>
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+        <input type="text" class="calculator-display-for-advanced" disabled>
+
+        <div class="calculator-button">
+            <div class="clear-and-enter">
+                <button data-type="ac" class="clear">AC</button>
+                <button data-type="equals" class="equals">=</button>
+            </div>
+            <div class="button-row">
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button data-type="operator" class="operator">+</button>
+            </div>
+            <div class="button-row">
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button data-type="operator" class="operator">-</button>
+            </div>
+            <div class="button-row">
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button data-type="operator" class="operator">&times;</button>
+            </div>
+            <div class="button-row">
+                <button class="number double">0</button>
+                <button class="decimal">.</button>
+                <button data-type="operator" class="operator">&divide;</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/calculator.js"></script>
+</body>
+</html>
