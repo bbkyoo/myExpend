@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" th:href="@{/css/calculator.css}">
+    <script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
     <title>calculator</title>
 </head>
 <body>
 <div class="container">
     <div class="calculator">
+        <div class="icons-frame">
+            <div class="icons">
+                <i class="fas fa-bus fa-2x"></i>
+            </div>
+            <div class="icons">
+                <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="icons">
+                <i class="fas fa-cookie fa-2x"></i>
+            </div>
+            <div class="icons">
+                <i class="fas fa-coffee fa-2x"></i>
+            </div>
+        </div>
+
         <input type="text" class="calculator-display-for-advanced" disabled>
 
         <div class="calculator-button">
@@ -38,6 +54,9 @@
                 <button class="decimal">.</button>
                 <button data-type="operator" class="operator">&divide;</button>
             </div>
+        </div>
+        <div class="confirm">
+            Ok
         </div>
     </div>
 </div>

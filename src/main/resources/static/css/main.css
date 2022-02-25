@@ -50,20 +50,21 @@ html, body {
     margin-bottom: 5px;
     text-align: center;
     border-radius: 10px;
-    width: 350px;
+    width: 330px;
     height: 80px;
-    background-color: #F6EABE;
+    margin-left: 3%;
+    background-color: #f6eed1;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.02);
 }
 
 .my-daily-expend-sentence-span{
     position: relative;
-    left: -27%;
+    left: -25%;
     top: 30%;
 }
 
 .my-daily-expend-money-span{
     position: relative;
-    right: -27%;
+    right: -25%;
     top: 30%;
 }

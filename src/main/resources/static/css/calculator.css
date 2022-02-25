@@ -8,15 +8,40 @@
 .calculator{
     background-color: #06597a;
     width: 350px;
-    height: 500px;
+    height: 590px;
     border-radius: 10px;
     padding: 10px 20px;
     border: solid 6px #ffffff;
 }
 
+.icons-frame{
+    background-color: #f09393;
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.icons {
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 40px;
+    height: 35px;
+}
+
+.icons > i {
+    color: black;
+}
+
 .calculator-display-for-advanced{
     background-color: #f09393;
-    height: 100px;
+    height: 40px;
     width: 90%;
     border-radius: 10px;
     font-size: 30px;
@@ -80,4 +105,18 @@
 }
 .button-row > .isPressed {
     background-color: #00da75;
+}
+
+.confirm{
+    background-color: #f09393;
+    height: 10px;
+    line-height: 10px;
+    width: 92%;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    padding: 25px 15px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    margin-top: 10px;
 }
