@@ -120,3 +120,45 @@
     overflow-wrap: break-word;
     margin-top: 10px;
 }
+
+.icons:active, .icons:visited{
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top:2px;
+}
+
+.confirm:active{
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top:2px;
+}
+
+
+
+
+/*.my-daily-block{*/
+/*    margin-bottom: 5px;*/
+/*    text-align: center;*/
+/*    border-radius: 10px;*/
+/*    width: 330px;*/
+/*    height: 80px;*/
+/*    margin-left: 3%;*/
+/*    background-color: #f6eed1;*/
+/*    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.02);*/
+/*}*/
+
+/*.my-daily-block-icons{*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.my-daily-block-text{*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.my-daily-block-money{*/
+/*    display: inline-block;*/
+/*}*/
+
+
+
+

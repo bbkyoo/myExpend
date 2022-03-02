@@ -9,17 +9,17 @@
 <body>
 <div class="container">
     <div class="calculator">
-        <div class="icons-frame">
-            <div class="icons">
+            <div class="icons-frame">
+            <div class="icons" id="public-transport">
                 <i class="fas fa-bus fa-2x"></i>
             </div>
-            <div class="icons">
+            <div class="icons" id="lunch">
                 <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
             </div>
-            <div class="icons">
+            <div class="icons" id="snack">
                 <i class="fas fa-cookie fa-2x"></i>
             </div>
-            <div class="icons">
+            <div class="icons" id="coffee">
                 <i class="fas fa-coffee fa-2x"></i>
             </div>
         </div>
@@ -55,11 +55,12 @@
                 <button data-type="operator" class="operator">&divide;</button>
             </div>
         </div>
-        <div class="confirm">
-            Ok
-        </div>
+            <div class="confirm">
+                Ok
+            </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="/js/calculator.js"></script>
 </body>
 </html>

@@ -57,5 +57,23 @@ buttons.forEach(button => {
     })
 })
 
+$('.confirm').click(function (){
+    calculator.updateDisplay()
+
+    $.ajax({
+        url: "/calculator/sendMoney",
+        data: calculator.displayElement.value,
+        type: "POST"
+
+
+    })
+
+    // $('.entire-frame').append("<div class='my-daily-block'>" +
+    //     "<div class='my-daily-block-icons'>"+"<i class=\'fas fa-bus fa-2x\'></i>"+"</div>"+
+    //     "<div class='my-daily-block-text'>bus</div>"+
+    //     "<div class='my-daily-block-money'>{calculator.displayElement.value}</div>"+
+    //     "</div>")
+})
+
 
 
