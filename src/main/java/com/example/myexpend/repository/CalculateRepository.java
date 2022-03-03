@@ -1,6 +1,6 @@
-package com.example.myexpense.repository;
+package com.example.myexpend.repository;
 
-import com.example.myexpense.dto.CalculateDto;
+import com.example.myexpend.dto.CalculateDto;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

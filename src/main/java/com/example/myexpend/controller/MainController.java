@@ -1,4 +1,4 @@
-package com.example.myexpense.controller;
+package com.example.myexpend.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
