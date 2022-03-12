@@ -31,7 +31,7 @@ class Calculator {
 }
 
 const buttons = document.querySelectorAll('button')
-const displayElement = document.querySelector('input')
+const displayElement = document.getElementById("calculator-display-for-advanced")
 
 const calculator = new Calculator(displayElement)
 
@@ -57,15 +57,42 @@ buttons.forEach(button => {
     })
 })
 
-$('.confirm').click(function (){
+const icons = document.querySelectorAll(".icons")
+let icon_name = null
+
+icons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        switch (icon.id) {
+            case 'public-transport':
+                icon_name = 'public-transport'
+                break
+            case 'lunch':
+                icon_name = 'lunch'
+                break
+            case 'snack':
+                icon_name = 'snack'
+                break
+            case 'coffee':
+                icon_name = 'coffee'
+                break
+            default:
+                icon_name = null
+                break
+        }
+    })
+})
+
+$('.confirm').click(function (e){
+    e.preventDefault()
     calculator.updateDisplay()
-
+    let arr = [icon_name, calculator.displayElement.value]
     $.ajax({
-        url: "/calculator/sendMoney",
-        data: calculator.displayElement.value,
-        type: "POST"
-
-
+        url: "/calculator/sendmoney",
+        data: "arr="+ arr,
+        type: "POST",
+        success : function (){
+            window.close()
+        }
     })
 
     // $('.entire-frame').append("<div class='my-daily-block'>" +

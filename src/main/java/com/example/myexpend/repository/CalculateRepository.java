@@ -11,8 +11,7 @@ import java.util.List;
 public interface CalculateRepository {
 
     // 소비 리스트 넣기
-    List<CalculateDto> insertExpendList();
+    void insertExpendList(CalculateDto calculateDto);
 
     // 소비 리스트 가져오기
-    List<CalculateDto> getExpendList();
 }
