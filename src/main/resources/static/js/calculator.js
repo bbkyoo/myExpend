@@ -86,20 +86,32 @@ $('.confirm').click(function (e){
     e.preventDefault()
     calculator.updateDisplay()
     let arr = [icon_name, calculator.displayElement.value]
+    let iconImage = null
     $.ajax({
         url: "/calculator/sendmoney",
         data: "arr="+ arr,
         type: "POST",
         success : function (){
+            if (icon_name === 'public-transport') {
+                iconImage = "<i class='fas fa-bus fa-2x'></i>"
+            } else if(icon_name === 'lunch'){
+                iconImage = "<i class='fa fa-cutlery fa-2x'></i>"
+            } else if(icon_name === 'snack'){
+                iconImage = "<i class='fas fa-cookie fa-2x'></i>"
+            } else if(icon_name === 'coffee'){
+                iconImage = "<i class='fas fa-coffee fa-2x'></i>"
+            }
+
+            $(opener.document).find(".entire-frame").append(
+                "<div class='my-daily-expend'>"
+                + "<span class='my-daily-expend-sentence-span'>"+iconImage+"</span>"
+                + "<span class='my-daily-expend-money-span'>"+String(calculator.displayElement.value)+"원"+"</span>"
+                + "</div>"
+            )
+
             window.close()
         }
     })
-
-    // $('.entire-frame').append("<div class='my-daily-block'>" +
-    //     "<div class='my-daily-block-icons'>"+"<i class=\'fas fa-bus fa-2x\'></i>"+"</div>"+
-    //     "<div class='my-daily-block-text'>bus</div>"+
-    //     "<div class='my-daily-block-money'>{calculator.displayElement.value}</div>"+
-    //     "</div>")
 })
 
 
