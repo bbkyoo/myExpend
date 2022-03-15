@@ -93,13 +93,21 @@ $('.confirm').click(function (e){
         type: "POST",
         success : function (){
             if (icon_name === 'public-transport') {
-                iconImage = "<i class='fas fa-bus fa-2x'></i>"
+                iconImage = "<div class='icons' id='public-transport'>" +
+                    "<i class='fas fa-bus fa-2x'></i>" +
+                    "</div>"
             } else if(icon_name === 'lunch'){
-                iconImage = "<i class='fa fa-cutlery fa-2x'></i>"
+                iconImage = "<div class='icons' id='lunch'>" +
+                    "<i class='fa fa-cutlery fa-2x'></i>" +
+                    "</div>"
             } else if(icon_name === 'snack'){
-                iconImage = "<i class='fas fa-cookie fa-2x'></i>"
+                iconImage = "<div class='icons' id='snack'>" +
+                    "<i class='fas fa-cookie fa-2x'></i>" +
+                    "</div>"
             } else if(icon_name === 'coffee'){
-                iconImage = "<i class='fas fa-coffee fa-2x'></i>"
+                iconImage = "<div class='icons' id='coffee'>" +
+                    "<i class='fas fa-coffee fa-2x'></i>" +
+                    "</div>"
             }
 
             $(opener.document).find(".entire-frame").append(
