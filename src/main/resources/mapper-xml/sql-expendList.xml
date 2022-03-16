@@ -6,8 +6,8 @@
     <!-- <select> 태그를 이용하여 select 쿼리임을 나타냄. 앞서 mapper에서 말했던 메소드의 이름은 select 쿼리의 id값과 같아야함. -->
     <insert id="insertExpendList" parameterType="com.example.myexpend.dto.CalculateDto">
 		<![CDATA[
-        insert into expend_list(consumption_type, expend_money)
-        values (#{consumptionType}, #{expendMoney})
+        insert into expend_list(consumption_type, expend_money, today_date)
+        values (#{consumptionType}, #{expendMoney}, #{todayDate})
         ]]>
 	</insert>
 </mapper>
