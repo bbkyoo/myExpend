@@ -82,10 +82,15 @@ icons.forEach(icon => {
     })
 })
 
+let today = new Date()
+let year = today.getFullYear()
+let month = today.getMonth() + 1
+let date = today.getDate()
+
 $('.confirm').click(function (e){
     e.preventDefault()
     calculator.updateDisplay()
-    let arr = [icon_name, calculator.displayElement.value]
+    let arr = [icon_name, calculator.displayElement.value, year+'-'+month+'-'+date]
     let iconImage = null
     $.ajax({
         url: "/calculator/sendmoney",
