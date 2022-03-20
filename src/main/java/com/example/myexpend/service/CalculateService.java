@@ -29,6 +29,11 @@ public class CalculateService {
         calculateDto.setTodayDate(timestamp);
         calculateRepository.insertExpendList(calculateDto);
     }
+
+    @Transactional
+    public int todaySumExpend(){
+        return calculateRepository.selectTodaySumExpend();
+    }
 }
 
 

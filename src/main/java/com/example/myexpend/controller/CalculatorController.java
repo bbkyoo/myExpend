@@ -35,19 +35,19 @@ public class CalculatorController {
         List<?> arr = Collections.singletonList(httpServletRequest.getParameter("arr"));
         calculateService.addExpendBox(calculateDto, arr);
 
-        String arrSt = (String) arr.get(0);
-        String[] arrStList = arrSt.split(",");
-        java.sql.Date date = java.sql.Date.valueOf(arrStList[2]);
-
-        Date now = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        String nowDate_now = simpleDateFormat.format(now);
-        String nowDate_arr = simpleDateFormat.format(date);
-
-        if (nowDate_now.equals(nowDate_arr)){
-            today_expend_money += Integer.parseInt(arrStList[1]);
-        } else{
-            today_expend_money = 0;
-        }
+//        String arrSt = (String) arr.get(0);
+//        String[] arrStList = arrSt.split(",");
+//        java.sql.Date date = java.sql.Date.valueOf(arrStList[2]);
+//
+//        Date now = new Date();
+//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+//        String nowDate_now = simpleDateFormat.format(now);
+//        String nowDate_arr = simpleDateFormat.format(date);
+//
+//        if (nowDate_now.equals(nowDate_arr)){
+//            today_expend_money += Integer.parseInt(arrStList[1]);
+//        } else{
+//            today_expend_money = 0;
+//        }
     }
 }

@@ -10,4 +10,13 @@
         values (#{consumptionType}, #{expendMoney}, #{todayDate})
         ]]>
 	</insert>
+
+	<select id="selectTodaySumExpend" resultType="int">
+		<![CDATA[
+		select sum(expend_money)
+		from expend_list
+		group by formatdatetime(today_date, 'yyyy-MM-dd')
+		having formatdatetime(today_date, 'yyyy-MM-dd') = curdate()
+		]]>
+	</select>
 </mapper>
