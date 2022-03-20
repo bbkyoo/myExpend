@@ -32,7 +32,11 @@ public class CalculateService {
 
     @Transactional
     public int todaySumExpend(){
-        return calculateRepository.selectTodaySumExpend();
+        try {
+            return calculateRepository.selectTodaySumExpend();
+        } catch (Exception e){
+            return 0;
+        }
     }
 }
 

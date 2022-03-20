@@ -122,6 +122,7 @@ $('.confirm').click(function (e){
                 + "</div>"
             )
 
+            opener.parent.location.reload()
             window.close()
         }
     })

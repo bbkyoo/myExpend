@@ -15,7 +15,7 @@ public class MainController {
 
     @GetMapping("/")
     public String openMainPage(Model model){
-        model.addAttribute("todaySumExpend", calculateService.todaySumExpend()+" 원");
+        model.addAttribute("todaySumExpend", calculateService.todaySumExpend()+"원");
         return "main";
     }
 }
