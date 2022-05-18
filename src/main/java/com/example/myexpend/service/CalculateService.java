@@ -40,10 +40,59 @@ public class CalculateService {
     }
 }
 
+// (()[[]])([])   22  6
+//  28
 
+// ( [ [ ] ]
 
-
-
+//s = list(input())
+//        q = []
+//
+//        for i in s:
+//        if i == ')':
+//        t = 0
+//        while q:
+//        top = q.pop()
+//        if top == '(':
+//        if t == 0:
+//        q.append(2)
+//        else:
+//        q.append(2 * t)
+//        break
+//        elif top == '[':
+//        print(0)
+//        exit(0)
+//        else:
+//        t = t + int(top)
+//
+//        elif i == ']':
+//        t = 0
+//        while q:
+//        top = q.pop()
+//        if top == '[':
+//        if t == 0:
+//        q.append(3)
+//        else:
+//        q.append(3 * t)
+//        break
+//        elif top == '(':
+//        print(0)
+//        exit(0)
+//        else:
+//        t = t + int(top)
+//
+//        else:
+//        q.append(i)
+//
+//        result = 0
+//        for i in q:
+//        if i == "(" or i == "[":
+//        result = 0
+//        break
+//        else:
+//        result += i
+//
+//        print(result)
 
 
 
